@@ -39,5 +39,7 @@ drumkit.addEventListener('click', () => {
     if (event.target.classList.contains('pad')) {
         let drumSound = event.target.dataset.sound;
         sounds.play(drumSound);
+    } else {
+        return null;
     }
 });
