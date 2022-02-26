@@ -40,6 +40,8 @@ drumkit.addEventListener('click', () => {
         let drumSound = event.target.dataset.sound;
         sounds.play(drumSound);
     } else {
+        alert("Something went wrong check the console for the error");
+        console.log("Error: You might of mispelled a word in the event listener");
         return null;
     }
 });
